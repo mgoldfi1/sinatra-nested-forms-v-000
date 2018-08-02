@@ -5,11 +5,12 @@ module FormsLab
 
     # code other routes/actions here
     get '/' do
-      erb :"pirates/new"
+      "Welcome to the Nested Forms Lab!"
+      # erb :"pirates/new"
     end
 
     post '/pirates' do
-
+      
     erb :"pirates/show"
     end
 
