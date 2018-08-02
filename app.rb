@@ -17,7 +17,8 @@ module FormsLab
 
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
-      @first_ship = Ship.new(params[:pirate][:ships])
+      @first_ship = Ship.new(params[:pirate][:ships][0])
+      @second_ship = Ship.new(params[:pirate][:ships][1])
     erb :"pirates/show"
     end
 
