@@ -13,6 +13,10 @@ SHIPS = []
     SHIPS
   end
 
+  def self.clear
+    SHIPS.clear
+  end
+
 
 
 
