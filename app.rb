@@ -9,12 +9,11 @@ module FormsLab
     end
 
     post '/pirates' do
-    redirect "/pirates"
+
+    erb :"pirates/show"
     end
 
-    get '/pirates' do
-      erb :"pirates/show"
-    end
+    
 
   end
 end
